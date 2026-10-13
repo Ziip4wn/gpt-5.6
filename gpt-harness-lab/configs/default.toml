@@ -1,0 +1,17 @@
+[model]
+provider = "mock"
+name = "gpt-5.4"
+max_output_tokens = 800
+
+[harness]
+prompt_files = ["safety", "assistant"]
+max_tool_rounds = 4
+memory_messages = 12
+
+[paths]
+prompts = "../prompts"
+traces = "../.runs"
+
+[tracing]
+enabled = true
+
